@@ -1,0 +1,7 @@
+from nltk.tokenize import WordPunctTokenizer
+text = "Thank you. Thank you. Thank you to Vice President Pence. He's a good guy. We've done a great job together. And Merry Christmas, Michigan. Thank you, Michigan. What a victory we had in Michigan."
+print("\nOriginal string:")
+print(text)
+result = WordPunctTokenizer().tokenize(text)
+print("\nSplit all punctuation into separate tokens:")
+print(result)
