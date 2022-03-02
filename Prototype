@@ -1,0 +1,11 @@
+import os      
+from gtts import gTTS
+
+Text = "The work we could be doing on lowering drug prices, on getting rid of these horrible, horrible situations. You know in the border … the woman is okay? Is she okay? Okay, thank you very much"
+
+print("please wait...processing")
+TTS = gTTS(text=Text, lang='en-uk')
+
+TTS.save("voice.mp3") # it save the mp3 file in the where codes is existing
+
+os.system("start voice.mp3") # we can listen the audio file
